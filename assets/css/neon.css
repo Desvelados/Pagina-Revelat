@@ -1,0 +1,27 @@
+.neon {
+  -webkit-animation: glow 1.2s ease-in-out infinite alternate;
+  -moz-animation: glow 1.2s ease-in-out infinite alternate;
+  animation: glow 1.2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    -webkit-filter: drop-shadow(4px 4px 5px rgba(35,79,255,0.2));
+    filter: drop-shadow(4px 4px 5px rgba(35,79,255,0.2));
+  }
+  to {
+    -webkit-filter: drop-shadow(4px 4px 5px rgba(35,79,255,1)); 
+    filter: drop-shadow(4px 4px 5px rgba(35,79,255,1)); 
+  }
+}
+	
+@-moz-keyframes glow {
+  from {
+    -moz-filter: drop-shadow(4px 4px 5px rgba(35,79,255,0.2));
+    filter: drop-shadow(4px 4px 5px rgba(35,79,255,0.2));
+  }
+  to {
+    -moz-filter: drop-shadow(4px 4px 5px rgba(35,79,255,1));
+    filter: drop-shadow(4px 4px 5px rgba(35,79,255,1));
+  }
+}
