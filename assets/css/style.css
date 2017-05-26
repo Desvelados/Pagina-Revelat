@@ -4,20 +4,37 @@
 	background-color: rgb(38, 39, 44); 
 	font-family: arial;
 }
-
 #diva{
 	width:80%;
 	margin: auto;
 	display: block;
 	position: relative;
-	min-height: 620px;
 	height: auto;
 	padding: 20px;
 }
-
-
 #miimg{
 	position: relative;
 	margin-left: 40%;
 	width: 28%
+}
+#revelat img {
+  width:45px;
+  height: 35px;
+}
+#contacto img{
+  width:20px;
+  height: 20px;
+}
+#estudio img{
+  width:20px;
+  height: 20px;
+}
+#pepe2 img {
+  width:30px;
+  height: 25px;
+}
+.push-to-bottom {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
 }
