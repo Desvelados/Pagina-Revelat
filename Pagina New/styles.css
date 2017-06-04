@@ -1209,3 +1209,39 @@
 .cub-3 .face {
   background-color:#325371;
 }
+@keyframes p1{
+    from {transform: translate3D(0em, 20em, 10em) rotateX(0deg);}
+    to {transform: translate3D(0em, 9.3em, 2em) rotateX(-90deg);}
+}
+.prism-1 {
+    animation-name: p1;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-duration: 4s;
+    transform-style: preserve-3d;
+}
+
+@keyframes p4{
+    from {transform: translate3D(0em, 15em, 10em) rotateX(0deg);}
+    to {transform: translate3D(0em, 5.3em, 6em) rotateX(270deg);}
+}
+.prism-4 {
+    animation-name: p4;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-duration: 4s;
+    transform-style: preserve-3d;
+}
+
+@keyframes p6{    
+    from {transform: translate3D(0em, 20em, -20em) rotateX(0deg);}
+    to {transform: translate3D(0em, 9.3em, -2em) rotateX(180deg);}
+}
+.prism-6 {
+    animation: p6 4s linear 1;
+    /*animation-name: p6;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-duration: 4s;
+    transform-style: preserve-3d;*/
+}

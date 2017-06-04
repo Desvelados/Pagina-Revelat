@@ -12,19 +12,6 @@
 	  
 	  <style type="text/css">
 
-          @keyframes pa{
-              from {
-                  transform: translate3D(0em, 15em, 10em) rotateX(0deg);
-              }
-              to {
-                  transform: translate3D(0em, 5.3em, 6em) rotateX(270deg);
-              }
-          }
-          @keyframes pe{
-              from {transform: rotateX(0deg);}
-              to {transform: rotateX(270deg);}
-          }
-          
 		  /* WebKit and Opera browsers */
 		  @-webkit-keyframes spinner {
 			from { -webkit-transform: rotateY(0deg);    }
@@ -65,7 +52,7 @@
               animation-name: pa;
               animation-timing-function: linear;
               animation-iteration-count: 1;
-              animation-duration: 6s;
+              animation-duration: 4s;
               transform-style: preserve-3d;
           }
 		  /*#spinner:hover {
@@ -79,7 +66,7 @@
 <body style="margin: 0">
 
 <div id="tridiv"><!--onmousemove="onMouseMove(event)" onmousedown="onMouseDown(event)" onmouseup="onMouseUp(event)"-->
-  <div id="spinner" class="scene" style="-webkit-transform:rotateX(2deg) rotateY(-274deg); -moz-transform:rotateX(2deg) rotateY(-274deg); -ms-transform:rotateX(2deg) rotateY(-274deg); transform:rotateX(2deg) rotateY(-274deg); ">
+  <div id="spinnerr" class="scene" style="-webkit-transform:rotateX(2deg) rotateY(-274deg); -moz-transform:rotateX(2deg) rotateY(-274deg); -ms-transform:rotateX(2deg) rotateY(-274deg); transform:rotateX(2deg) rotateY(-274deg); ">
     <div class="shape prism-1 pri-1">
       <div class="face ft">
         <div class="photon-shader" style="background-color: rgba(0, 0, 0, 0.46);"></div>
@@ -143,7 +130,7 @@
         <div class="photon-shader" style="background-color: rgba(0, 0, 0, 0.424);"></div>
       </div>
     </div>
-    <div id="test" class="shape prism-4 pri-4">
+    <div class="shape prism-4 pri-4">
       <div class="face ft">
         <div class="photon-shader" style="background-color: rgba(0, 0, 0, 0.46);"></div>
       </div>
