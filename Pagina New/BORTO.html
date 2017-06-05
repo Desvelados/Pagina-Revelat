@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<!--Pagina hecha por Revelat-->
+	  <meta charset="UTF-8">
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="animate.css" type="text/css">
+	  <link rel="stylesheet" href="styles.css" type="text/css">  
+	  
+	  <style type="text/css">
+
+		  /* WebKit and Opera browsers */
+		  @-webkit-keyframes hablar {
+			0% {margin-top: 0px;}
+			50%   {margin-top: 50px;}
+			100% {margin-top: 0px;}
+		  }
+
+		  /* all other browsers */
+		  @keyframes hablar {
+			0% {
+			  margin-top: 0px;
+			}
+			50% {
+			  margin-top: 50px;
+			}
+			100% {
+			  margin-top: 0px;
+			}
+		  }
+		  #boca {
+			-webkit-animation-name: hablar;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-iteration-count: infinite;
+			-webkit-animation-duration: 0.5s;
+
+			animation-name: hablar;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			animation-duration: 0.5s;
+
+			/*-webkit-transform-style: preserve-3d;
+			-moz-transform-style: preserve-3d;
+			-ms-transform-style: preserve-3d;
+			transform-style: preserve-3d;*/
+		  }
+          
+	  </style>
+	  
+    </head>
+
+<body>
+
+	<div>
+	<img style="position: absolute; z-index: 1;" src="b1.jpg" />
+	<img id="boca" style="position: absolute; z-index: 1000;"src="b2.png" />
+	</div>
+
+</body>
+</html>
