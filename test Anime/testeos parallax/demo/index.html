@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tilt</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="tilt.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="[ c-example__tilt ] js-tilt" data-tilt-glare="true" data-tilt-perspective="1000" data-tilt-scale="1" data-tilt-speed="400" data-tilt-max="10">
+        <div class="c-example__tilt-inner"></div>
+    </div>
+	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" pageAlignment="none" xml:space="preserve" width="400px" height="350px" class="[ c-example__tilt ] js-tilt" data-tilt-perspective="1000" data-tilt-scale="1" data-tilt-speed="400" data-tilt-max="10"><!-- x="0px" y="0px" viewBox="0 0 842 595" enable-background="new 0 0 842 595" -->
+		<!--<defs/>
+		<g type="LAYER" name="workspace" id="workspace" locked="true"/>-->
+		<g type="LAYER" name="Layer 01" id="Layer 01">
+			<path transform="matrix(0.6928642743145598 0.7210680254861939 -0.7210680254861939 0.6928642743145598 285.63986694852196 211.41334966780593)" width="100.0032458960759" height="50.53713123092602" stroke-width="1.044565968439497" stroke-miterlimit="3" stroke="none" fill="#323354" d="M3.552713678800501e-15,-7.105427357601002e-15 L100.00324589607578,-2.1316282072803006e-13 L100.0032458960759,50.53713123092554 L9.592326932761353e-14,50.53713123092581 L3.552713678800501e-15,-7.105427357601002e-15 Z "/>
+			<path transform="matrix(0.6928642743145613 0.7210680254861923 -0.7210680254861923 0.6928642743145613 333.8421233727506 191.2777114220562)" width="20.640509706252196" height="41.00010190332122" stroke-width="1.9478580811848163" stroke-miterlimit="3" stroke="none" fill="#323354" d="M1.1368683772161603e-13,3.552713678800501e-15 L20.64050970625228,5.329070518200751e-15 L20.64050970625231,41.00010190332122 L1.4921397450962104e-13,41.00010190332122 L1.1368683772161603e-13,3.552713678800501e-15 Z "/>
+			<path transform="matrix(-0.7210680254861919 0.6928642743145613 -0.6928642743145613 -0.7210680254861919 319.5971589500023 205.79325558752953)" width="20.640509706252182" height="19.381138171026294" stroke-width="1.3392278812084348" stroke-miterlimit="3" stroke="none" fill="#323354" d="M1.8829382497642655e-13,-4.263256414560601e-14 L20.640509706252356,-4.263256414560601e-14 L20.64050970625237,19.381138171026237 L1.9184653865522705e-13,19.38113817102625 L1.8829382497642655e-13,-4.263256414560601e-14 Z "/>
+			<path transform="matrix(-0.7210680254861832 0.6928642743145709 -0.6928642743145709 -0.7210680254861832 390.2258879235704 249.68221508817865)" width="49.773389289438555" height="50.53713123092578" stroke-width="0.7369320276439005" stroke-miterlimit="3" stroke="none" fill="#323354" d="M5.329070518200751e-15,2.842170943040401e-14 L49.77338928943854,0 L49.77338928943855,50.53713123092572 L-8.881784197001252e-15,50.53713123092578 L5.329070518200751e-15,2.842170943040401e-14 Z "/>
+		</g>
+	</svg>
+<script src="jquery.js"></script>
+<script src="tilt.jquery.js"></script>
+<script>
+    const tilt = $('.js-tilt').tilt();
+
+    $('.js-destroy').on('click', function () {
+        const element = $(this).closest('.js-parent').find('.js-tilt');
+        element.tilt.destroy.call(element);
+    });
+
+    $('.js-getvalue').on('click', function () {
+        const element = $(this).closest('.js-parent').find('.js-tilt');
+        const test = element.tilt.getValues.call(element);
+        console.log(test[0]);
+    });
+
+    $('.js-reset').on('click', function () {
+        const element = $(this).closest('.js-parent').find('.js-tilt');
+        element.tilt.reset.call(element);
+    });
+
+    /*tilt.on('change', function (e, transforms) {
+     console.log(transforms);
+     });
+
+     tilt.on('tilt.mouseLeave', function (e) {
+     console.log(e);
+     });
+
+     tilt.on('tilt.mouseEnter', function (e) {
+     console.log(e);
+     });*/
+</script>
+</body>
+</html>
